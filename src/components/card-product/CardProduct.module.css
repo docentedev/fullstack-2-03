@@ -1,0 +1,11 @@
+.cardGlow {
+  transition:
+    transform 0.3s cubic-bezier(0.4, 0, 0.2, 1),
+    box-shadow 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.cardGlow:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 30px -10px rgba(56, 189, 248, 0.25);
+  border-color: rgba(56, 189, 248, 0.4);
+}

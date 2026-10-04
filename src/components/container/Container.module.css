@@ -1,0 +1,22 @@
+.containerGlow {
+  /* Opcional: añade un fondo sutil o efecto si el diseño lo requiere */
+  position: relative;
+}
+
+/* Ejemplo de patrón de puntos o resplandor sutil de fondo si lo deseas */
+.containerGlow::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80%;
+  height: 250px;
+  background: radial-gradient(
+    circle,
+    rgba(56, 189, 248, 0.03) 0%,
+    transparent 70%
+  );
+  pointer-events: none;
+  z-index: -1;
+}

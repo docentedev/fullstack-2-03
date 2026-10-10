@@ -1,4 +1,7 @@
+import useDocumentTitle from "../../hooks/useDocumentTitle";
+
 const Home = () => {
+  useDocumentTitle("Home");
   return <div>Home</div>;
 };
 
